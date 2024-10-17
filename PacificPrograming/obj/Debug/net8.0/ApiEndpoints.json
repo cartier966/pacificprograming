@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "PacificPrograming.Controllers.AvatarController",
+    "Method": "GetAvatarUrl",
+    "RelativePath": "api/Avatar/{userIdentifier}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userIdentifier",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
