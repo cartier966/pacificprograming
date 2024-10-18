@@ -15,6 +15,7 @@ namespace ControllerTests
     {
 
         //case where last character is a number 6,7,8 or 9
+        //should call web service with last digit to get avatar url
 
         [Theory()]
         [InlineData("dda34e3d%$6")]
@@ -36,12 +37,13 @@ namespace ControllerTests
 
             //assert
             var viewResult = Assert.IsType<OkObjectResult>(result);
-            mockAvatarUrlService.Verify(s => s.GetUrlFromService(It.IsAny<int>()), Times.Once());
+            mockAvatarUrlService.Verify(s => s.GetUrlFromService(Convert.ToInt32(Char.GetNumericValue(userIdentifier.Last()))), Times.Once());
 
         }
 
         //case where last character is a number 6,7,8 or 9 but is not found in service db
-        
+        //should call web service with last digit to get avatar url
+
         [Theory()]
         [InlineData("dda34e3d%$6")]
         [InlineData("7")]
@@ -63,12 +65,13 @@ namespace ControllerTests
 
             //assert
             var viewResult = Assert.IsType<NotFoundResult>(result);
-            mockAvatarUrlService.Verify(s => s.GetUrlFromService(It.IsAny<int>()), Times.Once());
+            mockAvatarUrlService.Verify(s => s.GetUrlFromService(Convert.ToInt32(Char.GetNumericValue(userIdentifier.Last()))), Times.Once());
 
         }
 
         //case where last character is a number 1,2,3,4 or 5
-        
+        //should query SQLite with last digit to get avatar url
+
         [Theory()]
         [InlineData("dda34e3d%$1")]
         [InlineData("2")]
@@ -90,11 +93,12 @@ namespace ControllerTests
 
             //assert
             var viewResult = Assert.IsType<OkObjectResult>(result);
-            mockAvatarUrlService.Verify(s => s.GetUrlFromSQLite(It.IsAny<int>()), Times.Once());
+            mockAvatarUrlService.Verify(s => s.GetUrlFromSQLite(Convert.ToInt32(Char.GetNumericValue(userIdentifier.Last()))), Times.Once());
 
         }
 
         //case where last character is a number 1,2,3,4 or 5 but is not found in DB
+        //should query SQLite with last digit to get avatar url
 
         [Theory()]
         [InlineData("dda34e3d%$1")]
@@ -117,12 +121,12 @@ namespace ControllerTests
 
             //assert
             var viewResult = Assert.IsType<NotFoundResult>(result);
-            mockAvatarUrlService.Verify(s => s.GetUrlFromSQLite(It.IsAny<int>()), Times.Once());
+            mockAvatarUrlService.Verify(s => s.GetUrlFromSQLite(Convert.ToInt32(Char.GetNumericValue(userIdentifier.Last()))), Times.Once());
 
         }
 
-        //case where last character isNOT a number but a vowel a,e,i,o or i is found
-
+        //case where last character isNOT a number but a vowel a,e,i,o or u is found
+        
         [Theory()]
         [InlineData("dda34e3d%$")]
         [InlineData("7fe6e")]
@@ -146,7 +150,7 @@ namespace ControllerTests
 
         }
 
-        //case where last character isNOT a number and no vowel a,e,i,o or i is found but it contains an non alpha numeric character
+        //case where last character isNOT a number and no vowel a,e,i,o or u is found but it contains an non alpha numeric character
 
         [Theory()]
         [InlineData("dd343d%$")]
@@ -172,7 +176,7 @@ namespace ControllerTests
         }
 
 
-        //case where last character isNOT a number and no vowel a,e,i,o or i is found and it does not contain an non alpha numeric character
+        //case where last character isNOT a number and no vowel a,e,i,o or u is found and it does not contain an non alpha numeric character
 
         [Theory()]
         [InlineData("dd3gf43d")]
@@ -211,7 +215,7 @@ namespace ControllerTests
             var controller = new AvatarController(mockLogger, mockAvatarUrlService.Object, mockEnvironment.Object);
 
             //act
-            var result = await controller.GetAvatarUrl(null);
+            var result = await controller.GetAvatarUrl("");
 
             //assert
             var viewResult = Assert.IsType<BadRequestObjectResult>(result);
