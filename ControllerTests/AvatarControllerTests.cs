@@ -40,7 +40,7 @@ namespace ControllerTests
 
         }
 
-        //case where last character is a number 6,7,8 or 9
+        //case where last character is a number 6,7,8 or 9 but is not found in service db
         
         [Theory()]
         [InlineData("dda34e3d%$6")]
@@ -94,7 +94,7 @@ namespace ControllerTests
 
         }
 
-        //case where last character is a number 1,2,3,4 or 5
+        //case where last character is a number 1,2,3,4 or 5 but is not found in DB
 
         [Theory()]
         [InlineData("dda34e3d%$1")]
