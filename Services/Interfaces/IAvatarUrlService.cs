@@ -9,6 +9,7 @@ namespace Services.Interfaces
 {
     public interface IAvatarUrlService
     {
+        Task<AvatarUrl> GetUrlFromService(int userIdentifierLastNumber);
         Task<AvatarUrl> GetUrlFromJsonFile(string filePath, int userIdentifierLastNumber);
         Task<AvatarUrl> GetUrlFromSQLite(int userIdentifierLastNumber);
         string ConcatenateUrlWithUserIdentifierLastNumber(int userIdentifierLastNumber);

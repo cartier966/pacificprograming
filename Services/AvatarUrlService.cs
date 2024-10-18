@@ -5,6 +5,9 @@ using Services.Data;
 using Services.Entities;
 using Services.Interfaces;
 using Services.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Net.Http.Headers;
+using System.Net;
 
 namespace Services
 {
@@ -50,6 +53,21 @@ namespace Services
             ImagesModel model = JsonConvert.DeserializeObject<ImagesModel>(json);
             var avatarUrlObject = model.Images.FirstOrDefault(u => u.Id == userIdentifierLastNumber);
             return avatarUrlObject;
+        }
+
+        public async Task<AvatarUrl> GetUrlFromService(int userIdentifierLastNumber)
+        {
+            var serviceUrl = $"https://my-json-server.typicode.com/ck-pacificdev/tech-test/images/{userIdentifierLastNumber}";
+            AvatarUrl avatar;
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(serviceUrl))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    avatar = JsonConvert.DeserializeObject<AvatarUrl>(apiResponse);
+                }
+            }
+            return avatar;
         }
 
         public async Task<AvatarUrl> GetUrlFromSQLite(int userIdentifierLastNumber)

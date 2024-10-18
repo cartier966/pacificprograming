@@ -64,10 +64,21 @@ namespace PacificPrograming.Controllers
                         //   return NotFound();
                         //}
 
-                        var avatarUrlWithIdentifierLastNumber = _avatarUrlService.ConcatenateUrlWithUserIdentifierLastNumber(userIdentifierLastNumber);
-                        _logger.LogInformation("avatarUrl was retrieved concatenated string with user identifier last digit being {userIdentifierLastNumber} for {userIdentifier}: {userIdentifierLastNumberUrl}", userIdentifierLastNumber, userIdentifier, avatarUrlWithIdentifierLastNumber);
-                        return Ok(new { Url = avatarUrlWithIdentifierLastNumber });
+                        //var avatarUrlWithIdentifierLastNumber = _avatarUrlService.ConcatenateUrlWithUserIdentifierLastNumber(userIdentifierLastNumber);
+                        // _logger.LogInformation("avatarUrl was retrieved concatenated string with user identifier last digit being {userIdentifierLastNumber} for {userIdentifier}: {userIdentifierLastNumberUrl}", userIdentifierLastNumber, userIdentifier, avatarUrlWithIdentifierLastNumber);
+                        // return Ok(new { Url = avatarUrlWithIdentifierLastNumber });
 
+                        var avatarUrlEntityFromService = await _avatarUrlService.GetUrlFromService(userIdentifierLastNumber);
+                        if (avatarUrlEntityFromService != null)
+                        {
+                            _logger.LogInformation("avatarUrl was retrieved from Service for {userIdentifier}: {avatarUrlEntity}", userIdentifier, avatarUrlEntityFromService);
+                            return Ok(avatarUrlEntityFromService);
+                        }
+                        else
+                        {
+                            _logger.LogInformation("avatarUrl was NOT found from Service for {userIdentifier}", userIdentifier);
+                            return NotFound();
+                        }
                     }
                     else if(userIdentifierLastNumber > 0 && userIdentifierLastNumber < 6)
                     {
