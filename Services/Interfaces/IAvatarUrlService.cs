@@ -12,7 +12,6 @@ namespace Services.Interfaces
         Task<AvatarUrl> GetUrlFromService(int userIdentifierLastNumber);
         Task<AvatarUrl> GetUrlFromJsonFile(string filePath, int userIdentifierLastNumber);
         Task<AvatarUrl> GetUrlFromSQLite(int userIdentifierLastNumber);
-        string ConcatenateUrlWithUserIdentifierLastNumber(int userIdentifierLastNumber);
         string ConcatenateUrlWithRandomNumber();
         string GetStandardUrlForVowel();
         string GetDefaultUrl();

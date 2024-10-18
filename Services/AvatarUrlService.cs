@@ -29,12 +29,6 @@ namespace Services
             return  randomNumberUrl;
         }
 
-        public string ConcatenateUrlWithUserIdentifierLastNumber(int userIdentifierLastNumber)
-        {
-            var userIdentifierLastNumberUrl = $"https://my-json-server.typicode.com/ck-pacificdev/tech-test/images/{userIdentifierLastNumber}";
-           return userIdentifierLastNumberUrl;
-        }
-
         public string GetDefaultUrl()
         {
             return "https://api.dicebear.com/8.x/pixel-art/png?seed=default&size=150";

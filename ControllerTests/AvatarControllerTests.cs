@@ -13,28 +13,6 @@ namespace ControllerTests
 {
     public class AvatarControllerTests
     {
-       /* [Theory()]
-        [InlineData("dda34e3d%$6")]
-        [InlineData("7")]
-        [InlineData("dda34e3d%$8")]
-        [InlineData("dda34e3d%$99")]
-        public async Task GetAvatarUrl_Should_Call_ConcatenateUrlWithUserIdentifierLastNumber(string userIdentifier)
-        {
-            //arrange
-            var mock = new Mock<ILogger<AvatarController>>();
-            ILogger<AvatarController> mockLogger = mock.Object;
-            var mockEnvironment = new Mock<IWebHostEnvironment>();
-            var mockAvatarUrlService = new Mock<IAvatarUrlService>();
-            var controller = new AvatarController(mockLogger, mockAvatarUrlService.Object, mockEnvironment.Object);
-
-            //act
-            var result = await controller.GetAvatarUrl(userIdentifier);
-
-            //assert
-            var viewResult = Assert.IsType<OkObjectResult>(result);
-            mockAvatarUrlService.Verify(s => s.ConcatenateUrlWithUserIdentifierLastNumber(It.IsAny<int>()), Times.Once());
-
-        }*/
 
         [Theory()]
         [InlineData("dda34e3d%$6")]
