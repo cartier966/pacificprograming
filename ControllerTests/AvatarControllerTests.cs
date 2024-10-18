@@ -59,6 +59,7 @@ namespace ControllerTests
 
             //assert
             var viewResult = Assert.IsType<NotFoundResult>(result);
+            mockAvatarUrlService.Verify(s => s.GetUrlFromService(It.IsAny<int>()), Times.Once());
 
         }
 
@@ -108,7 +109,8 @@ namespace ControllerTests
 
             //assert
             var viewResult = Assert.IsType<NotFoundResult>(result);
-      
+            mockAvatarUrlService.Verify(s => s.GetUrlFromSQLite(It.IsAny<int>()), Times.Once());
+
         }
 
         [Theory()]
