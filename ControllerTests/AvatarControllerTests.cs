@@ -49,12 +49,13 @@ namespace ControllerTests
             var mockEnvironment = new Mock<IWebHostEnvironment>();
             var mockHttpClient = new Mock<HttpClient>();
             var mockAvatarUrlService = new Mock<IAvatarUrlService>();
+            mockAvatarUrlService.Setup(e => e.GetUrlFromService(It.IsAny<int>())).ReturnsAsync(new Services.Entities.AvatarUrl());
             var controller = new AvatarController(mockLogger, mockAvatarUrlService.Object, mockEnvironment.Object);
             //act
             var result = await controller.GetAvatarUrl(userIdentifier);
 
             //assert
-            //var viewResult = Assert.IsType<OkObjectResult>(result);
+            var viewResult = Assert.IsType<OkObjectResult>(result);
             mockAvatarUrlService.Verify(s => s.GetUrlFromService(It.IsAny<int>()), Times.Once());
 
         }
