@@ -15,6 +15,8 @@ small test project of api
 
    Many, many things:
 
+   -error handling
+
    -the base urls used could come from appsettings, as well as path to file
 
    -more logging could be implemented
