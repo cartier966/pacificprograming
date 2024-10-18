@@ -32,6 +32,7 @@ namespace PacificPrograming.Controllers
         }
 
         // GET: api/Avatar/5
+        // GET: api/Avatar?userIdentifier=5
         [HttpGet]
          public async Task<IActionResult> GetAvatarUrl([FromQuery]string userIdentifier)
         {
