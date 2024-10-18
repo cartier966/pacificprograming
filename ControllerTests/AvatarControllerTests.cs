@@ -39,6 +39,30 @@ namespace ControllerTests
         }
 
         [Theory()]
+        [InlineData("dda34e3d%$6")]
+        [InlineData("7")]
+        [InlineData("dda34e3d%$8")]
+        [InlineData("dda34e3d%$99")]
+        public async Task GetAvatarUrl_Should_Return_NotFoundResult_WhenNotFound_InService(string userIdentifier)
+        {
+            //arrange
+            var mock = new Mock<ILogger<AvatarController>>();
+            ILogger<AvatarController> mockLogger = mock.Object;
+            var mockEnvironment = new Mock<IWebHostEnvironment>();
+            var mockHttpClient = new Mock<HttpClient>();
+            var mockAvatarUrlService = new Mock<IAvatarUrlService>();
+            mockAvatarUrlService.Setup(e => e.GetUrlFromService(It.IsAny<int>()));
+            var controller = new AvatarController(mockLogger, mockAvatarUrlService.Object, mockEnvironment.Object);
+
+            //act
+            var result = await controller.GetAvatarUrl(userIdentifier);
+
+            //assert
+            var viewResult = Assert.IsType<NotFoundResult>(result);
+
+        }
+
+        [Theory()]
         [InlineData("dda34e3d%$1")]
         [InlineData("2")]
         [InlineData("dda34e3d%$3")]
@@ -69,7 +93,7 @@ namespace ControllerTests
         [InlineData("dda34e3d%$3")]
         [InlineData("dda34e3d%$4")]
         [InlineData("##55")]
-        public async Task GetAvatarUrl_Should_Return_NotFoundResult(string userIdentifier)
+        public async Task GetAvatarUrl_Should_Return_NotFoundResult_WhenNotFound_InDB(string userIdentifier)
         {
             //arrange
             var mock = new Mock<ILogger<AvatarController>>();
