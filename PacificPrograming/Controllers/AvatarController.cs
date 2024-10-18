@@ -32,8 +32,8 @@ namespace PacificPrograming.Controllers
         }
 
         // GET: api/Avatar/5
-        [HttpGet("{userIdentifier}")]
-        public async Task<IActionResult> GetAvatarUrl(string userIdentifier)
+        [HttpGet]
+         public async Task<IActionResult> GetAvatarUrl([FromQuery]string userIdentifier)
         {
             if (string.IsNullOrEmpty(userIdentifier) || string.IsNullOrWhiteSpace(userIdentifier))
             {

@@ -10,6 +10,11 @@
       {
         "Name": "userIdentifier",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userIdentifier",
+        "Type": "",
         "IsRequired": true
       }
     ],
