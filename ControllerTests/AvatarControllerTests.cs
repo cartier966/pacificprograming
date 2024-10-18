@@ -14,6 +14,8 @@ namespace ControllerTests
     public class AvatarControllerTests
     {
 
+        //case where last character is a number 6,7,8 or 9
+
         [Theory()]
         [InlineData("dda34e3d%$6")]
         [InlineData("7")]
@@ -38,6 +40,8 @@ namespace ControllerTests
 
         }
 
+        //case where last character is a number 6,7,8 or 9
+        
         [Theory()]
         [InlineData("dda34e3d%$6")]
         [InlineData("7")]
@@ -63,6 +67,8 @@ namespace ControllerTests
 
         }
 
+        //case where last character is a number 1,2,3,4 or 5
+        
         [Theory()]
         [InlineData("dda34e3d%$1")]
         [InlineData("2")]
@@ -87,6 +93,8 @@ namespace ControllerTests
             mockAvatarUrlService.Verify(s => s.GetUrlFromSQLite(It.IsAny<int>()), Times.Once());
 
         }
+
+        //case where last character is a number 1,2,3,4 or 5
 
         [Theory()]
         [InlineData("dda34e3d%$1")]
@@ -113,6 +121,8 @@ namespace ControllerTests
 
         }
 
+        //case where last character isNOT a number but a vowel a,e,i,o or i is found
+
         [Theory()]
         [InlineData("dda34e3d%$")]
         [InlineData("7fe6e")]
@@ -135,6 +145,8 @@ namespace ControllerTests
             mockAvatarUrlService.Verify(s => s.GetStandardUrlForVowel(), Times.Once());
 
         }
+
+        //case where last character isNOT a number and no vowel a,e,i,o or i is found but it contains an non alpha numeric character
 
         [Theory()]
         [InlineData("dd343d%$")]
@@ -160,6 +172,8 @@ namespace ControllerTests
         }
 
 
+        //case where last character isNOT a number and no vowel a,e,i,o or i is found and it does not contain an non alpha numeric character
+
         [Theory()]
         [InlineData("dd3gf43d")]
         [InlineData("7f")]
@@ -184,8 +198,9 @@ namespace ControllerTests
         }
 
 
-        [Fact()]
+        //case where an empty identifier is passed to api method
 
+        [Fact()]
         public async Task GetAvatarUrl_Should_Call_Throw_BadRequest()
         {
             //arrange
