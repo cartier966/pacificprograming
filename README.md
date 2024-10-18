@@ -23,5 +23,5 @@ small test project of api
 
    -more logging could be implemented
 
-   -a seperate provider should be implemented for the SQLite db actions (and the JsonFile actions which are not used)
+   -a seperate provider should be implemented for the SQLite db actions, the service call to external API (and the JsonFile actions which are not used)
 
