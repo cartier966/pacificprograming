@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\controllers\\avatarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|e:\\work\\pacificprograming\\pacificprograming\\services\\avatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|solutionrelative:services\\avatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|e:\\work\\pacificprograming\\pacificprograming\\services\\avatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|solutionrelative:services\\avatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|e:\\work\\pacificprograming\\pacificprograming\\services\\interfaces\\iavatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|solutionrelative:services\\interfaces\\iavatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,24 +38,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "PacificPrograming\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Properties\\launchSettings.json",
-              "RelativeToolTip": "PacificPrograming\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-18T13:32:17.194Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\index.html",
               "RelativeDocumentMoniker": "PacificPrograming\\index.html",
@@ -68,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs",
               "RelativeDocumentMoniker": "PacificPrograming\\Program.cs",
@@ -81,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AvatarControllerTests.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\ControllerTests\\AvatarControllerTests.cs",
               "RelativeDocumentMoniker": "ControllerTests\\AvatarControllerTests.cs",
@@ -100,9 +99,35 @@
               "RelativeDocumentMoniker": "PacificPrograming\\Controllers\\AvatarController.cs",
               "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Controllers\\AvatarController.cs",
               "RelativeToolTip": "PacificPrograming\\Controllers\\AvatarController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAhwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAhwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T00:34:59.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AvatarUrlService.cs",
+              "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\Services\\AvatarUrlService.cs",
+              "RelativeDocumentMoniker": "Services\\AvatarUrlService.cs",
+              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\Services\\AvatarUrlService.cs",
+              "RelativeToolTip": "Services\\AvatarUrlService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAApwDkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T00:26:33.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PacificPrograming\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PacificPrograming\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-18T13:32:17.194Z",
               "EditorCaption": ""
             },
             {
@@ -116,19 +141,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T00:26:38.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AvatarUrlService.cs",
-              "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\Services\\AvatarUrlService.cs",
-              "RelativeDocumentMoniker": "Services\\AvatarUrlService.cs",
-              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\Services\\AvatarUrlService.cs",
-              "RelativeToolTip": "Services\\AvatarUrlService.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAApwDcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:26:33.887Z",
               "EditorCaption": ""
             }
           ]

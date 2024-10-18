@@ -99,7 +99,7 @@ namespace PacificPrograming.Controllers
                     }
                 }
                 
-                if (new string[] { "a", "e", "i", "o", "u" }.Any(s=>userIdentifier.Contains(s)))
+                if (new string[] { "a", "e", "i", "o", "u" }.Any(s=>userIdentifier.ToLower().Contains(s)))
                 {
                     var avatarUrlForVowel = _avatarUrlService.GetStandardUrlForVowel();
                     _logger.LogInformation("avatarUrl was retrieved from standard url because a vowel was detected in the identifier {userIdentifier}: {vowelUrl}", userIdentifier, avatarUrlForVowel);

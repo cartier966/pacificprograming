@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PacificPrograming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8697f4037cfc7714251617afec3e0015d2be87de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+957d3528c3c3590bf31721880595dde7c03d656f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PacificPrograming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PacificPrograming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
