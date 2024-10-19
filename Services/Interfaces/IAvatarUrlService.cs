@@ -9,9 +9,9 @@ namespace Services.Interfaces
 {
     public interface IAvatarUrlService
     {
-        Task<AvatarUrl> GetUrlFromService(int userIdentifierLastNumber);
+        Task<AvatarUrl?> GetUrlFromService(int userIdentifierLastNumber);
         Task<AvatarUrl> GetUrlFromJsonFile(string filePath, int userIdentifierLastNumber);
-        Task<AvatarUrl> GetUrlFromSQLite(int userIdentifierLastNumber);
+        Task<AvatarUrl?> GetUrlFromSQLite(int userIdentifierLastNumber);
         string ConcatenateUrlWithRandomNumber();
         string GetStandardUrlForVowel();
         string GetDefaultUrl();

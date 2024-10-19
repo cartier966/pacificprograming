@@ -67,7 +67,7 @@ namespace Services
             return avatar;
         }
 
-        public async Task<AvatarUrl> GetUrlFromSQLite(int userIdentifierLastNumber)
+        public async Task<AvatarUrl?> GetUrlFromSQLite(int userIdentifierLastNumber)
         {
             var avatarUrlEntity = await _context.FindAsync<AvatarUrl>(userIdentifierLastNumber);
             return avatarUrlEntity;
