@@ -37,7 +37,7 @@
                 // 📃 To do: Get avatar URI from back end
                 //
                  const userIdentifier = document.getElementById('userIdentifierInput').value;
-                 const response = await fetch(`https://localhost:7126/avatar?userIdentifier=${userIdentifier}`);
+                 const response = await fetch(`https://localhost:7126/api/avatar?userIdentifier=${userIdentifier}`);
                  const responseBody = await response.json();
                  const avatarUrl = responseBody.url;
 

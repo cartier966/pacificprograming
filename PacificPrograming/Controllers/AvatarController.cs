@@ -17,7 +17,7 @@ using Services.Models;
 
 namespace PacificPrograming.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AvatarController : ControllerBase
     {
