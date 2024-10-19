@@ -49,16 +49,19 @@ namespace Services
             return avatarUrlObject;
         }
 
-        public async Task<AvatarUrl> GetUrlFromService(int userIdentifierLastNumber)
+        public async Task<AvatarUrl?> GetUrlFromService(int userIdentifierLastNumber)
         {
             var serviceUrl = $"https://my-json-server.typicode.com/ck-pacificdev/tech-test/images/{userIdentifierLastNumber}";
-            AvatarUrl avatar;
+            AvatarUrl? avatar = null;
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync(serviceUrl))
                 {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    avatar = JsonConvert.DeserializeObject<AvatarUrl>(apiResponse);
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        avatar = JsonConvert.DeserializeObject<AvatarUrl>(apiResponse);
+                    }
                 }
             }
             return avatar;

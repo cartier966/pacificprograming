@@ -70,9 +70,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs",
               "RelativeDocumentMoniker": "PacificPrograming\\Program.cs",
-              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs",
-              "RelativeToolTip": "PacificPrograming\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCcAAAAVAAAAAAAAAA==",
+              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs*",
+              "RelativeToolTip": "PacificPrograming\\Program.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T13:09:48.091Z",
               "EditorCaption": ""
@@ -112,7 +112,8 @@
               "RelativeToolTip": "Services\\AvatarUrlService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAADkAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:26:33.887Z"
+              "WhenOpened": "2024-10-18T00:26:33.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
