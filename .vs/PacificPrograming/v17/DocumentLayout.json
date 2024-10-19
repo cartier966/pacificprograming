@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\work\\pacificPrograming\\pacificprograming\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{605D0465-3810-4E7D-B730-0B61361F95D8}|ControllerTests\\ControllerTests.csproj|e:\\work\\pacificprograming\\pacificprograming\\controllertests\\avatarcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{605D0465-3810-4E7D-B730-0B61361F95D8}|ControllerTests\\ControllerTests.csproj|solutionrelative:controllertests\\avatarcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|e:\\work\\pacificprograming\\pacificprograming\\services\\interfaces\\iavatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F064806D-37DC-4C0F-8B93-5B75546134CA}|Services\\Services.csproj|solutionrelative:services\\interfaces\\iavatarurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\index.html",
               "RelativeDocumentMoniker": "PacificPrograming\\index.html",
@@ -66,32 +66,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs",
               "RelativeDocumentMoniker": "PacificPrograming\\Program.cs",
-              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs",
-              "RelativeToolTip": "PacificPrograming\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Program.cs*",
+              "RelativeToolTip": "PacificPrograming\\Program.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T13:09:48.091Z"
+              "WhenOpened": "2024-10-18T13:09:48.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AvatarControllerTests.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\ControllerTests\\AvatarControllerTests.cs",
               "RelativeDocumentMoniker": "ControllerTests\\AvatarControllerTests.cs",
               "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\ControllerTests\\AvatarControllerTests.cs",
               "RelativeToolTip": "ControllerTests\\AvatarControllerTests.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAIwH0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAIwIMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T00:36:22.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AvatarController.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Controllers\\AvatarController.cs",
               "RelativeDocumentMoniker": "PacificPrograming\\Controllers\\AvatarController.cs",
@@ -99,12 +100,11 @@
               "RelativeToolTip": "PacificPrograming\\Controllers\\AvatarController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAIAwwC4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:34:59.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T00:34:59.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AvatarUrlService.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\Services\\AvatarUrlService.cs",
               "RelativeDocumentMoniker": "Services\\AvatarUrlService.cs",
@@ -117,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PacificPrograming\\Properties\\launchSettings.json",
