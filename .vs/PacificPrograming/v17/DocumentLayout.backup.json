@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\work\\pacificPrograming\\pacificprograming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\controllers\\avatarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\controllers\\avatarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|solutionrelative:pacificprograming\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A62C561F-AFEB-405B-B11E-16CEBB6368F0}|PacificPrograming\\PacificPrograming.csproj|e:\\work\\pacificprograming\\pacificprograming\\pacificprograming\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\index.html",
               "RelativeDocumentMoniker": "PacificPrograming\\index.html",
               "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\index.html",
               "RelativeToolTip": "PacificPrograming\\index.html",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-10-18T13:31:53.901Z",
               "EditorCaption": ""
@@ -87,18 +87,17 @@
               "RelativeToolTip": "ControllerTests\\AvatarControllerTests.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAIwIMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:36:22.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T00:36:22.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AvatarController.cs",
               "DocumentMoniker": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Controllers\\AvatarController.cs",
               "RelativeDocumentMoniker": "PacificPrograming\\Controllers\\AvatarController.cs",
               "ToolTip": "E:\\work\\pacificPrograming\\pacificprograming\\PacificPrograming\\Controllers\\AvatarController.cs",
               "RelativeToolTip": "PacificPrograming\\Controllers\\AvatarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAASwBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAASwA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T00:34:59.639Z",
               "EditorCaption": ""
@@ -113,8 +112,7 @@
               "RelativeToolTip": "Services\\AvatarUrlService.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAgwDoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:26:33.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T00:26:33.887Z"
             },
             {
               "$type": "Document",
@@ -126,8 +124,7 @@
               "RelativeToolTip": "PacificPrograming\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-18T13:32:17.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T13:32:17.194Z"
             },
             {
               "$type": "Document",
@@ -139,8 +136,7 @@
               "RelativeToolTip": "Services\\Interfaces\\IAvatarUrlService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:26:38.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T00:26:38.594Z"
             }
           ]
         }
